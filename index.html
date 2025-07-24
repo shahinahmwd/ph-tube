@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph-tube</title>
+    <!-- tailwind and daisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!--  customize your configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- customize style -->
+    <style>
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body class="inter">
+    <header class="w-11/12 mx-auto">
+        <nav class="flex flex-col md:flex-row justify-between py-10 items-center space-y-4 border-b-2">
+            <div class="logo font-bold text-base md:text-3xl">
+                <img src="./Images/Logo.png" alt="">
+            </div>
+            <div class="manu font-medium text-lg text-[#252525]">
+                <button class="btn">Sort by view</button>
+            </div>
+            <div class="button">
+                <button class="btn font-medium text-lg text-[#FFFFFF] rounded-sm bg-[#FF1F3D]">Blog</button>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
